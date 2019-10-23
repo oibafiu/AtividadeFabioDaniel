@@ -1,6 +1,6 @@
 ﻿<html>
 <body>
-    <form name="frm" action="frete2.asp" method="post" ID="Form1">
+    <div class="conteudo">
         <fieldset style="background: #ffffff;">
             <legend>Calculo de Frete</legend>
             <div>
@@ -28,13 +28,7 @@
                 <span><input type="text" name="peso" value=""></span>
             </div>
             <div>
-                <span style="width:130px;">Formato:</span>
-                <span>
-                    <select name="formato" size="1">
-                        <option value="1">Caixa/pacote</option>
-                        <option value="2">Rolo/prisma</option>
-                    </select>
-                </span>
+                
             </div>
             <div>
                 <span style="width:130px;">Comprimento:</span>
@@ -48,17 +42,12 @@
                 <span style="width:130px;">Largura:</span>
                 <span><input type="text" name="largura" value=""></span>
             </div>
-            <div>
-                <span style="width:130px;">Diâmetro:</span>
-                <span><input type="text" name="diametro" value=""></span>
-            </div>
+            
             <div>
                 <span style="width:130px;">Mão própria:</span>
                 <span>
-                    <select name="maopropria" size="1">
-                        <option value="S">Sim</option>
-                        <option value="N">Não</option>
-                    </select>
+                    <input name="maopropria" \>
+                        
                 </span>
             </div>
             <div>
@@ -68,19 +57,21 @@
             <div>
                 <span style="width:130px;">Aviso de Recebimento:</span>
                 <span>
-                    <select name="avisorecebimento" size="1">
-                        <option value="S">Sim</option>
-                        <option value="N">Não</option>
-                    </select>
+                    <input name="avisorecebimento" />
+                       
+                    
                 </span>
             </div>
             <div>
                 <span>
-                    <input type="SUBMIT" name="BTN" value="Consultar"
-                           ID="Submit1">
+                    <input type="button" id="consultar" value="Consultar">
                 </span>
             </div>
+            <div class="resultado">
+                <label>Resultado:</label>
+
+            </div>
         </fieldset>
-    </form>
+    </div>
 </body>
 </html>
