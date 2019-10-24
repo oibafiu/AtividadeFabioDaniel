@@ -1,6 +1,6 @@
 ﻿<html>
 <body>
-    <form name="frm" action="frete2.asp" method="post" ID="Form1">
+    <div class="conteudo">
         <fieldset style="background: #ffffff;">
             <legend>Calculo de Frete</legend>
             <div>
@@ -9,7 +9,7 @@
             </div>
             <div>
                 <span style="width:130px;">Senha:</span>
-                <span><input type="password" name="senha" value=""></span>
+                <span><input type="text" name="senha" value=""></span>
             </div>
             <div>
                 <span style="width:130px;">Serviços:</span>
@@ -17,15 +17,18 @@
             </div>
             <div>
                 <span style="width:130px;">Cep Origem:</span>
-                <span><input type="text" name="cepori" value=""></span>
+                <span><input type="text" name="ceporigem" value=""></span>
             </div>
             <div>
                 <span style="width:130px;">Cep Destino:</span>
-                <span><input type="text" name="cepdes" value=""></span>
+                <span><input type="text" name="cepdestino" value=""></span>
             </div>
             <div>
                 <span style="width:130px;">Peso:</span>
                 <span><input type="text" name="peso" value=""></span>
+            </div>
+            <div>
+
             </div>
             <div>
                 <span style="width:130px;">Comprimento:</span>
@@ -39,32 +42,45 @@
                 <span style="width:130px;">Largura:</span>
                 <span><input type="text" name="largura" value=""></span>
             </div>
+
             <div>
                 <span style="width:130px;">Diâmetro:</span>
                 <span><input type="text" name="diametro" value=""></span>
             </div>
             <div>
-                <span style="width:130px;">Mão própria, sim (s) ou não (n):</span>                
+                <span style="width:130px;">Mão própria:</span>
+                <span>
+                    <select name="maopropria" size="1">
+                        <option value="S">Sim</option>
+                        <option value="N">Não</option>
+                    </select>
+                </span>
             </div>
             <div>
                 <span style="width:130px;">Valor declarado:</span>
                 <span><input type="text" name="valordeclarado" value=""></span>
             </div>
             <div>
-                <span style="width:130px;">Aviso de Recebimento, sim (s) ou não (n):</span>
-                <span><input type="text" name="avisorecebimento" value=""></span>
-            </div>
-            <div>
+                <span style="width:130px;">Aviso de Recebimento:</span>
                 <span>
-                    <input type="button" id="consultar" value="Consultar"
-                           ID="Submit1">
+                    <select name="avisorecebimento" size="1">
+                        <option value="S">Sim</option>
+                        <option value="N">Não</option>
+                    </select>
                 </span>
             </div>
             <div>
-                <span style="width:130px;">Resultado:</span>
-                <span><input type="text" name="resultado" value=""></span>
+                <span>
+                    <input type="SUBMIT" name="BTN" value="Consultar"
+                           ID="Submit1">
+                </span>
             </div>
         </fieldset>
-    </form>
+    </div>
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/Util/script.js"></script>
+
+
+
 </body>
 </html>
