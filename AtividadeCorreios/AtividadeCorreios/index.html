@@ -10,19 +10,8 @@
     <div class="container-fluid h-100">
         <div class="row d-flex align-content-center justify-content-center h-100">
             <div class="col-md-6">
-                <div class="row">
-                    <div class="input-group mb-6">
-                        <span style="width:50%">Codigo:</span>
-                        <span><input type="text" name="codigo" value=""></span>
-                    </div>
-                    <div class="input-group mb-6">
-                        <span style="width:50%">Senha:</span>
-                        <span><input type="password" name="senha" value=""></span>
-                    </div>
-                    <div class="input-group mb-6">
-                        <span style="width:50%">Serviços:</span>
-                        <span><input type="text" name="servicos" value=""></span>
-                    </div>
+                <div class="row"> 
+                    <form name="formenviar"  action="send-post" method="post"></form>
                     <div class="input-group mb-6">
                         <span style="width:50%">Cep Origem:</span>
                         <span><input type="text" name="ceporigem" value=""></span>
@@ -48,10 +37,6 @@
                         <span><input type="text" name="largura" value=""></span>
                     </div>
                     <div class="input-group mb-6">
-                        <span style="width:50%">Diâmetro:</span>
-                        <span><input type="text" name="diametro" value=""></span>
-                    </div>
-                    <div class="input-group mb-6">
                         <span style="width:50%;">Mão de obra própria, sim (s) ou não (n):</span>
                         <span><input type="text" name="maopropria" value=""></span>
                     </div>
@@ -65,7 +50,7 @@
                     </div>
                     <div class="justify-content-center">
                         <span>
-                            <input  type="submit" class="btn btn-secondary btn-lg" id="consultar" value="Consultar">
+                            <input  type="submit" class="btn btn-secondary btn-lg" name="consultar" value="Consultar">
                         </span>
                     </div>                    
                 </div>
